@@ -1,0 +1,23 @@
+  <div class="nyl">
+    <div class="nystop">
+	  <div class="cp">{dede:field name='typeid' function="GetTopTypename(@me)" /}<span>{dede:field.typeid runphp='yes' function="GetTopid(@me)"}if(@me=='1')@me='ABOUT';else if(@me=='2')@me='COURSE';else if(@me=='3')@me='NEWS';else if(@me=='4')@me='ACTIVITES';else if(@me=='5')@me='SERVER';else if(@me=='6')@me='CONTACT';else if(@me=='16')@me='DYNAMIC';else if(@me=='17')@me='MESSAGE';else if(@me=='25')@me='MYBOBO';{/dede:field.typeid}</div>
+	</div>
+	<div class="nysbai">
+	  <div class="lf">
+	    {dede:channel type='son' currentstyle="<a href='~typelink~' class='cur'>~typename~</a>"}
+		<a href='[field:typeurl/]'>[field:typename/]</a>
+		{/dede:channel}
+      </div>
+	</div>
+	<div style="width:150px; height:180px; margin-top:50px; margin-left:70px;background-color:#FF0000;position:absolute;display:none; overflow:hidden;" id="show"><img src="/images/123.jpg" /></div>
+	<div class="nycon">
+	  {dede:global.dede_nyleftcontact/}
+	</div>
+	<div class="nyqq"><img src="/images1/nyqq.jpg" border="0" usemap="#Map" />
+	<map name="Map" id="Map">
+	<area shape="circle" coords="92,19,20" href="http://weibo.com/u/5061501820" title="ÖØÇì²¼²¨±ÚÇò¾ãÀÖ²¿" target="_blank" />
+	<area shape="circle" coords="144,20,20" href="#" onmouseover="document.getElementById('show').style.display='block'" onmouseout="document.getElementById('show').style.display='none'" />
+	<area shape="circle" coords="195,20,20" href="http://wpa.qq.com/msgrd?v=3&uin=250372306&site=qq&menu=yes" target="_blank" />
+	<area shape="rect" coords="16,44,270,131" href="/bbhd/xstyhd/" />
+	</map></div>
+  </div>

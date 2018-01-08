@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="design by dede58.com" />
+<link rel="stylesheet" type="text/css" href="/css/webcss.css" />
+<SCRIPT language="javascript" type="text/javascript" src="/js/Rolling.js"></SCRIPT>
+<SCRIPT language="javascript" type="text/javascript" src="/js/mq.js"></SCRIPT>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="c">
+  <div class="left">
+    <div class="news">
+	  <div class="cp">
+	    <ul>
+		  {dede:arclist typeid='4,28' row='3' titlelen='33' infolen='65' orderby='pubdate' flag='c'}
+		  <li><span>[field:pubdate runphp='yes']
+      $a="".strftime('%m/%d',@me)."";
+      $b=strftime('%m/%d',@me);
+      $ntime = time();
+      $day3 = 3600 * 24 * 3;
+      if(($ntime - @me) < $day3) @me = $a;
+      else @me =$b;
+    [/field:pubdate]</span><div class="pf"><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a><br />[field:info/]...</div></li>
+		  {/dede:arclist}
+		</ul>
+	  </div>
+	  <div class="cp1">
+	    <ul style="overflow:hidden;" id="tjpro">
+		  {dede:arclist type='image' typeid='12' row='10' orderby='pubdate'}
+		  <li><a href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" alt="[field:title/]" /></a></li>
+		  {/dede:arclist}
+		</ul>
+	  </div>
+	  <script>new Marquee("tjpro",2,1,310,110,40,0,500)</script>
+	</div>
+	<div style="width:150px; height:180px; margin-top:42px; margin-left:85px;background-color:#FF0000;position:absolute;display:none; overflow:hidden;" id="show"><img src="/images/123.jpg" /></div>
+	<div class="con">
+	  {dede:global.dede_leftcontact/}
+	</div>
+	<div class="qq"><img src="images1/qq.jpg" border="0" usemap="#Map" />
+	<map name="Map" id="Map">
+	<area shape="rect" coords="85,4,132,37" href="http://weibo.com/u/5061501820" target="_blank" /><area shape="rect" coords="138,4,180,38" href="#" onmouseover="document.getElementById('show').style.display='block'" onmouseout="document.getElementById('show').style.display='none'" /><area shape="rect" coords="192,3,230,39" href="http://wpa.qq.com/msgrd?v=3&uin=250372306&site=qq&menu=yes" target="_blank" /><area shape="rect" coords="19,45,312,131" href="/bbhd/xstyhd/" /></map></div>
+  </div>
+  <div class="right">
+    <div class="kc">
+	  <div class="cp">
+	    <ul>
+		  <li><a href="/course/qsnkc/" title="青少年课程">青少年课程</a></li>
+		  <li><a href="/course/sjkc/" title="私教课程">私教课程</a></li>
+		  <li><a href="/course/ttkc/" title="团体课程">团体课程</a></li>
+		</ul>
+	  </div>
+	  <div class="cp1">
+	    <ul>
+		  {dede:arclist typeid='11' row='3' titlelen='26' orderby='pubdate'}
+		  <li><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+		  {/dede:arclist}
+		</ul>
+	  </div>
+	  <div class="cp2">
+	    <ul>
+		  {dede:arclist typeid='20' row='3' titlelen='26' orderby='pubdate'}
+		  <li><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a></li>
+		  {/dede:arclist}
+		</ul>
+	  </div>
+	</div>
+	<div class="kcb">
+	  <div class="kcm1"><a href="/course"><img src="images1/kcm1.jpg" /></a></div>
+	  <div class="kcm2"><a href="/news/gjss/"><img src="images1/kcm2.jpg" /></a></div>
+	  <div class="kcm3"><a href="/bbhd/tjls/"><img src="images1/kcm3.jpg" /></a></div>
+	</div>
+	<div class="about">
+	  <div class="cp">重庆布波壁球俱乐部是重庆唯一专业壁球组织，致力于以超高的专业水准，推动壁球运动在重庆地区发展。
+俱乐部拥有西南地区最权威的教练团队，每周定期组织有“零基础”壁球新手体验活动、壁球交流活动、壁球梯级联赛，长期开设壁</div>
+	  <div class="cp1">球私教课程、团体初级和进阶课程，欢迎广大壁球爱好者加入布波家族！...<a href="/about/about/">[更多]</a></div>
+	</div>
+	<div class="pro">
+	  <div class="pl"><img src="images1/left.jpg" id="hjright" style="cursor:pointer;" /></div>
+	  <div class="pc">
+	    <div class="pcp">
+		  <ul id="huanjing">
+		    {dede:arclist type='image' typeid='22' row='10' orderby='pubdate'}
+		    <li><a href="[field:arcurl/]" title="[field:fulltitle/]"><img src="[field:litpic/]" alt="[field:title/]" /></a></li>
+			{/dede:arclist}
+		  </ul>
+		</div>
+	  </div>
+	  <div class="pr"><img src="images1/right.jpg" id="hjleft" style="cursor:pointer;" /></div>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var scrollPic_01 = new ScrollPic();
+scrollPic_01.scrollContId   = "huanjing"; //内容容器ID
+scrollPic_01.arrLeftId      = "hjleft";//左箭头ID
+scrollPic_01.arrRightId     = "hjright"; //右箭头ID
+scrollPic_01.frameWidth     = 545;//显示框宽度
+scrollPic_01.pageWidth      = 187; //翻页宽度
+scrollPic_01.speed          = 20; //移动速度(单位毫秒，越小越快)
+scrollPic_01.space          = 20; //每次移动像素(单位px，越大越快)
+scrollPic_01.autoPlay       = true; //自动播放
+scrollPic_01.autoPlayTime   = 3; //自动播放间隔时间(秒)
+scrollPic_01.initialize(); //初始化
+//--><!]]>
+</script>
+	</div>
+  </div>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

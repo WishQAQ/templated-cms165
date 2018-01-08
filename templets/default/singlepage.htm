@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/css/webcss.css" />
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="ny">
+  {dede:include filename="left.htm"/}
+  <div class="nyr">
+    <div class="nyrtop">
+	  <div class="nyrtpl">{dede:type}[field:typename/]{/dede:type}</div>
+	  <div class="nyrtpr">您现在的位置：{dede:field name='position'/}</div>
+	</div>
+	<div class="nyrbai">
+	  <div class="nyrp5">{dede:field.content/}</div>
+	</div>
+  </div>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

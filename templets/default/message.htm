@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/css/webcss.css" />
+<script language="JavaScript" type="text/javascript">
+function CheckForm()
+{
+if(document.message.uname.value == "")
+ {
+ alert("抱歉，姓名不能为空！");
+ document.message.uname.focus();
+ return false;
+ }
+if(document.message.tel.value == "")
+ {
+ alert("抱歉，电话不能为空！");
+ document.message.tel.focus();
+ return false;
+ }
+if(document.message.content.value == "")
+ {
+ alert("抱歉，留言内容不能为空！");
+ document.message.content.focus();
+ return false;
+ }
+if(document.message.validate.value == "")
+ {
+ alert("抱歉，验证码不能为空！");
+ document.message.validate.focus();
+ return false;
+ }
+}
+</script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="ny">
+  {dede:include filename="left.htm"/}
+  <div class="nyr">
+    <div class="nyrtop">
+	  <div class="nyrtpl">{dede:type}[field:typename/]{/dede:type}</div>
+	  <div class="nyrtpr">您现在的位置：{dede:field name='position'/}</div>
+	</div>
+	<div class="nyrbai">
+	  <div class="nyrbc6">
+	    <form action="/yuyue/yuyue.php" method="post" style="margin:0px;" name="message" onSubmit="return CheckForm();">
+		<table cellpadding="0" cellspacing="0" border="0">
+		  <tr>
+		    <td>姓　名：</td><td><input name="uname" type="text" class="input"/></td>
+		  </tr>
+		  <tr><td height="10" colspan="2"></td></tr>
+		  <tr>
+		    <td>电　话：</td><td><input name="tel" type="text" class="input" /></td>
+		  </tr>
+		  <tr><td height="10" colspan="2"></td></tr>
+		  <tr>
+		    <td valign="top">内　容：</td><td><textarea name="content" class="txt"></textarea></td>
+		  </tr>
+		  <tr><td height="10" colspan="2"></td></tr>
+		  <tr>
+		    <td>验证码：</td><td><input id="vdcode" type="text" name="validate" class="input1" />&nbsp;<img id="vdimgck" align="absmiddle" onClick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="/include/vdimgck.php"/></td>
+		  </tr>
+		  <tr><td height="10" colspan="2"></td></tr>
+		  <tr>
+		    <td>&nbsp;</td><td align="left"><input type="submit" name="Submit" value="提 交" class="btn"></td>
+		  </tr>
+		</table>
+		</form>
+	  </div>
+	</div>
+  </div>
+</div>
+{dede:include filename="foot.htm"/}
+</body>
+</html>

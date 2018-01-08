@@ -1,0 +1,44 @@
+<?php
+$z[0]=Array("global","",236,264);
+$z[0][4]['name']="cfg_soft_lang";
+$z[1]=Array("global","",277,303);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",347,377);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("global","",414,441);
+$z[3][4]['name']="cfg_keywords";
+$z[4]=Array("include","",750,785);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("arclist","\r\n		  <li><span>[field:pubdate runphp='yes']\r\n      \$a=\"\".strftime('%m/%d',@me).\"\";\r\n      \$b=strftime('%m/%d',@me);\r\n      \$ntime = time();\r\n      \$day3 = 3600 * 24 * 3;\r\n      if((\$ntime - @me) < \$day3) @me = \$a;\r\n      else @me =\$b;\r\n    [/field:pubdate]</span><div class=\"pf\"><a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\">[field:title/]</a><br />[field:info/]...</div></li>\r\n		  ",886,1381);
+$z[5][4]['typeid']="4,28";
+$z[5][4]['row']="3";
+$z[5][4]['titlelen']="33";
+$z[5][4]['infolen']="65";
+$z[5][4]['orderby']="pubdate";
+$z[5][4]['flag']="c";
+$z[6]=Array("arclist","\r\n		  <li><a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\"><img src=\"[field:litpic/]\" alt=\"[field:title/]\" /></a></li>\r\n		  ",1476,1685);
+$z[6][4]['type']="image";
+$z[6][4]['typeid']="12";
+$z[6][4]['row']="10";
+$z[6][4]['orderby']="pubdate";
+$z[7]=Array("global","",1998,2029);
+$z[7][4]['name']="dede_leftcontact";
+$z[8]=Array("arclist","\r\n		  <li><a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\">[field:title/]</a></li>\r\n		  ",2979,3152);
+$z[8][4]['typeid']="11";
+$z[8][4]['row']="3";
+$z[8][4]['titlelen']="26";
+$z[8][4]['orderby']="pubdate";
+$z[9]=Array("arclist","\r\n		  <li><a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\">[field:title/]</a></li>\r\n		  ",3211,3384);
+$z[9][4]['typeid']="20";
+$z[9][4]['row']="3";
+$z[9][4]['titlelen']="26";
+$z[9][4]['orderby']="pubdate";
+$z[10]=Array("arclist","\r\n		    <li><a href=\"[field:arcurl/]\" title=\"[field:fulltitle/]\"><img src=\"[field:litpic/]\" alt=\"[field:title/]\" /></a></li>\r\n			",4283,4493);
+$z[10][4]['type']="image";
+$z[10][4]['typeid']="22";
+$z[10][4]['row']="10";
+$z[10][4]['orderby']="pubdate";
+$z[11]=Array("include","",5299,5334);
+$z[11][4]['filename']="foot.htm";
+
+?>

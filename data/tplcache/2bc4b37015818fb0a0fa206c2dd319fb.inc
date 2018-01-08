@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]" title="[field:fulltitle function='htmlspecialchars(@me)'/]"><div class="pp"><img src="[field:litpic/]" alt="[field:title function='html2text(@me)'/]" /></div><div class="pf">[field:title/]</div></a></li>
